@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bites | Home</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <script>
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Welcome to Campus Bites Cafeteria</h2>
+            <p>Fresh, hygienic, and student-friendly meals right in the heart of UCP.</p>
+        </section>
+
+        <section class="info-cards">
+            <div class="card">
+                <h3>About Us</h3>
+                <p>Campus Bites serves freshly prepared breakfast, fast food, desi main courses, and refreshing
+                    beverages tailored for students and faculty.</p>
+            </div>
+            <div class="card">
+                <h3>Location</h3>
+                <p><strong>Ground Floor, Building A</strong><br>Adjacent to the Central Courtyard, University of Central
+                    Punjab, Johar Town, Lahore.</p>
+            </div>
+            <div class="card">
+                <h3>Opening Hours</h3>
+                <p><strong>Monday – Friday:</strong> 8:00 AM – 8:00 PM<br><strong>Saturday:</strong> 9:00 AM – 5:00
+                    PM<br><strong>Sunday:</strong> Closed</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
