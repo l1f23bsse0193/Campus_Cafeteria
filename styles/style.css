@@ -1,1 +1,122 @@
-  
+/* =========================================================
+   Campus Bites - Shared Stylesheet (styles/style.css)
+   Each page has its own section. Edit only your own section
+   to avoid merge conflicts.
+   ========================================================= */
+
+/* ===== SHARED / BASE ===== */
+:root {
+  --green: #1b4332;
+  --green-soft: #2d6a4f;
+  --mustard: #e9b44c;
+  --paper: #f6f8f4;
+  --ink: #1e2a24;
+  --line: #d5ddd3;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.site-header {
+  background: var(--green);
+  color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.6rem;
+  color: var(--mustard);
+}
+
+.site-nav { display: flex; gap: 18px; flex-wrap: wrap; }
+
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a:hover,
+.site-nav a.active { border-bottom-color: var(--mustard); }
+
+.site-nav a:focus-visible { outline: 2px solid var(--mustard); outline-offset: 3px; }
+
+.site-footer {
+  background: var(--green);
+  color: #dfe9e2;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
+  font-size: 0.9rem;
+}
+
+/* ===== DEALS PAGE ===== */
+.deals-intro { margin-bottom: 28px; }
+
+.deals-intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  color: var(--green);
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.deal-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 6px solid var(--mustard);
+  border-radius: 6px;
+  padding: 20px 22px;
+}
+
+.deal-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  color: var(--green-soft);
+  margin-bottom: 6px;
+}
+
+.deal-items { margin-bottom: 12px; }
+
+.deal-price { font-size: 1.4rem; font-weight: 700; color: var(--green); }
+
+.old-price {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #7a857e;
+  text-decoration: line-through;
+  margin-right: 6px;
+}
+
+.deal-note { font-size: 0.9rem; color: #5b675f; margin-top: 4px; }
+
+.deals-footnote { margin-top: 24px; font-size: 0.9rem; color: #5b675f; }
+
+@media (max-width: 700px) {
+  .deals-grid { grid-template-columns: 1fr; }
+  .deals-intro h2 { font-size: 1.8rem; }
+  .site-header { flex-direction: column; align-items: flex-start; }
+}
