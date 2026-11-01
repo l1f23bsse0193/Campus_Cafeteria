@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback &amp; Contact - Campus Bites</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Campus <span>Bites</span></h1>
+            <p class="tagline">Official Student Canteen</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="menu-hero feedback-hero">
+        <div class="hero-content">
+            <span class="badge">💬 Your Opinion Runs This Kitchen</span>
+            <h2>Feedback &amp; Contact</h2>
+            <p>Loved the biryani? Think the chai needs more karak? Tell us. Every suggestion dropped here is read by our kitchen team every single week.</p>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="menu-container">
+
+        <!-- Contact Details -->
+        <section class="menu-section">
+            <div class="section-header">
+                <h3>📍 Reach Us Directly</h3>
+                <p>Find us on campus, call us, or drop an email. We answer faster than the printing lab queue moves.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h4>Cafeteria Location</h4>
+                    <p>Ground Floor, Student Services Block<br>Faculty of Information Technology<br>University of Central Punjab, Lahore</p>
+                    <span class="contact-meta">Right beside the main parking lot</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h4>Opening Hours</h4>
+                    <p>Monday – Friday: 8:00 AM – 9:00 PM<br>Saturday: 9:00 AM – 5:00 PM<br>Sunday &amp; Holidays: Closed</p>
+                    <span class="contact-meta">Peak rush: 12:30 PM – 2:00 PM</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h4>Phone &amp; WhatsApp</h4>
+                    <p>Counter Desk: +92 42 3512 0000<br>Bulk Orders: +92 300 1234567<br>Manager: +92 321 7654321</p>
+                    <span class="contact-meta">Call before 6:00 PM for bulk orders</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h4>Email Us</h4>
+                    <p>General: campusbites@ucp.edu.pk<br>Complaints: bites.support@ucp.edu.pk<br>Events: bites.events@ucp.edu.pk</p>
+                    <span class="contact-meta">Replies within 2 working days</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback Form -->
+        <section class="menu-section">
+            <div class="section-header">
+                <h3>📝 Share Your Feedback</h3>
+                <p>Takes less than a minute, and it genuinely changes what lands on the counter next month.</p>
+            </div>
+
+            <div class="feedback-layout">
+
+                <!-- Form Panel -->
+                <div class="form-panel">
+                    <form class="feedback-form" action="#" method="post">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Ahmed Raza" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="you@ucp.edu.pk" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="role">I am a</label>
+                                <select id="role" name="role">
+                                    <option value="student" selected>Student</option>
+                                    <option value="faculty">Faculty Member</option>
+                                    <option value="staff">Administrative Staff</option>
+                                    <option value="visitor">Campus Visitor</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="topic">Feedback About</label>
+                                <select id="topic" name="topic">
+                                    <option value="food" selected>Food Quality</option>
+                                    <option value="service">Counter Service</option>
+                                    <option value="pricing">Pricing &amp; Deals</option>
+                                    <option value="cleanliness">Cleanliness &amp; Seating</option>
+                                    <option value="suggestion">New Item Suggestion</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>How was your last visit?</label>
+                            <div class="rating-row">
+                                <label class="rating-option"><input type="radio" name="rating" value="5" checked> <span>😍 Excellent</span></label>
+                                <label class="rating-option"><input type="radio" name="rating" value="4"> <span>🙂 Good</span></label>
+                                <label class="rating-option"><input type="radio" name="rating" value="3"> <span>😐 Average</span></label>
+                                <label class="rating-option"><input type="radio" name="rating" value="2"> <span>🙁 Poor</span></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us what you loved, what went wrong, or what you would like to see on the menu next semester." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="contactback" value="yes">
+                                <span>Yes, the cafeteria manager may contact me about this feedback.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-submit">Submit Feedback</button>
+                            <button type="reset" class="btn-reset">Clear Form</button>
+                        </div>
+
+                        <p class="form-note">🔒 This is a static form built for the DevOps assignment, so nothing is stored or sent anywhere.</p>
+                    </form>
+                </div>
+
+                <!-- Side Panel -->
+                <aside class="side-panel">
+                    <div class="info-box">
+                        <h4>Why Bother Writing?</h4>
+                        <p class="ingredients">The Student Combo and the Jalapeno Cheese Loaded Fries both started life as suggestions in this exact box. Three reviewed suggestions make it to the counter every semester.</p>
+                        <span class="food-note">⭐ 1 in 3 suggestions reaches the kitchen.</span>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>Lost Something?</h4>
+                        <p class="ingredients">Student cards, calculators, chargers and an alarming number of single earbuds end up with us. The lost-and-found box sits at the billing counter.</p>
+                        <span class="food-note">🎒 Claim within 14 days.</span>
+                    </div>
+
+                    <div class="info-box highlight-box">
+                        <h4>Urgent Hygiene Complaint?</h4>
+                        <p class="ingredients">Do not wait for the form. Walk up to the counter supervisor on duty or call the manager directly, and it will be handled the same day.</p>
+                        <span class="food-note">📞 +92 321 7654321</span>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>Follow Campus Bites</h4>
+                        <p class="ingredients">Daily specials, sudden discounts and exam-week extended hours are posted on our student pages before they reach the notice board.</p>
+                        <span class="food-note">📱 @campusbites.ucp</span>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Campus Bites Cafeteria | University of Central Punjab</p>
+    </footer>
+
+</body>
+</html>
