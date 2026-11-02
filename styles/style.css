@@ -1,3 +1,52 @@
+/*l1f23bsse0193 - Umer Ali - Home Pgae CSS*/
+
+/* ==========================================
+   CSS Variables & Global Reset
+========================================== */
+:root {
+    --primary-red: #e60000;
+    --dark-red: #990000;
+    --light-red: #ffcccc;
+    --lighter-red: #ffe6e6; /* Light red requested for the navbar */
+    --pure-white: #ffffff;
+    --off-white: #fcfcfc;
+    --dark-gray: #222222;
+    --text-gray: #555555;
+    --transition: all 0.3s ease;
+}
+
+
+
+
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--pure-white);
+    color: var(--primary-red);
+    padding: 0.8rem 2.2rem;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.btn-primary:hover {
+    background-color: var(--light-red);
+    color: var(--dark-red);
+    transform: translateY(-3px);
+}
+
+
+
+
 /* L1f23bsse0255 - Mazhar Hussain - Menu Page CSS */
 * {
     margin: 0;
