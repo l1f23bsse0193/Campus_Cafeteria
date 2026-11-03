@@ -1,77 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deals | Campus Bites</title>
-  <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals - Campus Bites</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <h1 class="logo">Campus Bites</h1>
-    <nav class="site-nav">
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="deals.html" class="active">Deals</a>
-      <a href="order.html">How to Order</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
-  </header>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Campus <span>Bites</span></h1>
+            <p class="tagline">Official Student Canteen</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deals.html" class="active">Deals</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="container">
-
-    <!-- ===== DEALS PAGE ===== -->
-    <section class="deals-intro">
-      <h2>Student Deals</h2>
-      <p>Bundle offers made for tight budgets. Show your student ID at the counter. All prices are in PKR.</p>
+    <!-- Hero Banner -->
+    <section class="menu-hero">
+        <div class="hero-content">
+            <span class="badge">🔥 Student Budget Specials</span>
+            <h2>Student Deals</h2>
+            <p>Bundle offers made for tight budgets. Show your student ID at the counter. All prices are in PKR.</p>
+        </div>
     </section>
 
-    <div class="deals-grid">
+    <!-- Main Container -->
+    <main class="menu-container">
 
-      <article class="deal-card">
-        <h3>Study Break Combo</h3>
-        <p class="deal-items">Zinger Burger, French Fries and a Mint Margarita</p>
-        <p class="deal-price"><span class="old-price">PKR 780</span> PKR 599</p>
-        <p class="deal-note">Valid all day</p>
-      </article>
+        <section class="menu-section deals-section">
+            <div class="section-header">
+                <h3>🎟️ Combo Deals of the Day</h3>
+                <p>Pick a bundle, save some pocket money, and keep the rest for the next printing queue.</p>
+            </div>
+            <div class="grand-grid">
 
-      <article class="deal-card">
-        <h3>Morning Starter</h3>
-        <p class="deal-items">Paratha with Omelette and a cup of Doodh Patti Tea</p>
-        <p class="deal-price"><span class="old-price">PKR 330</span> PKR 249</p>
-        <p class="deal-note">Valid 8:00 AM to 11:00 AM</p>
-      </article>
+                <div class="menu-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700" alt="Study Break Combo">
+                        <span class="price-tag">PKR 599</span>
+                    </div>
+                    <div class="card-details">
+                        <h4>Study Break Combo</h4>
+                        <p class="ingredients">Zinger Burger, French Fries and a Mint Margarita. <span class="old-price">PKR 780</span></p>
+                        <span class="food-note">⏰ Valid all day.</span>
+                    </div>
+                </div>
 
-      <article class="deal-card">
-        <h3>Biryani Lunch Deal</h3>
-        <p class="deal-items">Chicken Biryani, Raita and a cold drink</p>
-        <p class="deal-price"><span class="old-price">PKR 480</span> PKR 399</p>
-        <p class="deal-note">Valid 12:00 PM to 3:00 PM</p>
-      </article>
+                <div class="menu-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=700" alt="Morning Starter">
+                        <span class="price-tag">PKR 249</span>
+                    </div>
+                    <div class="card-details">
+                        <h4>Morning Starter</h4>
+                        <p class="ingredients">Paratha with Omelette and a cup of Doodh Patti Tea. <span class="old-price">PKR 330</span></p>
+                        <span class="food-note">⏰ Valid 8:00 AM to 11:00 AM.</span>
+                    </div>
+                </div>
 
-      <article class="deal-card">
-        <h3>Friends Platter</h3>
-        <p class="deal-items">4 Club Sandwiches, 2 large Fries and 4 drinks</p>
-        <p class="deal-price"><span class="old-price">PKR 2,300</span> PKR 1,799</p>
-        <p class="deal-note">Best for groups of four</p>
-      </article>
+                <div class="menu-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=700" alt="Biryani Lunch Deal">
+                        <span class="price-tag">PKR 399</span>
+                    </div>
+                    <div class="card-details">
+                        <h4>Biryani Lunch Deal</h4>
+                        <p class="ingredients">Chicken Biryani, Raita and a cold drink. <span class="old-price">PKR 480</span></p>
+                        <span class="food-note">⏰ Valid 12:00 PM to 3:00 PM.</span>
+                    </div>
+                </div>
 
-      <article class="deal-card">
-        <h3>Sweet Finish</h3>
-        <p class="deal-items">Kheer and 2 Gulab Jamun with any tea</p>
-        <p class="deal-price"><span class="old-price">PKR 360</span> PKR 279</p>
-        <p class="deal-note">Valid after 2:00 PM</p>
-      </article>
+                <div class="menu-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=700" alt="Friends Platter">
+                        <span class="price-tag">PKR 1,799</span>
+                    </div>
+                    <div class="card-details">
+                        <h4>Friends Platter</h4>
+                        <p class="ingredients">4 Club Sandwiches, 2 large Fries and 4 drinks. <span class="old-price">PKR 2,300</span></p>
+                        <span class="food-note">👥 Best for groups of four.</span>
+                    </div>
+                </div>
 
-    </div>
+                <div class="menu-card">
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=700" alt="Sweet Finish">
+                        <span class="price-tag">PKR 279</span>
+                    </div>
+                    <div class="card-details">
+                        <h4>Sweet Finish</h4>
+                        <p class="ingredients">Kheer and 2 Gulab Jamun with any tea. <span class="old-price">PKR 360</span></p>
+                        <span class="food-note">⏰ Valid after 2:00 PM.</span>
+                    </div>
+                </div>
 
-    <p class="deals-footnote">Deals cannot be combined. Offers may change without notice.</p>
-  </main>
+            </div>
+            <p class="deals-footnote">Deals cannot be combined. Offers may change without notice.</p>
+        </section>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Campus Bites | University Cafeteria</p>
-  </footer>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Campus Bites Cafeteria | University of Central Punjab</p>
+    </footer>
 
 </body>
 </html>
