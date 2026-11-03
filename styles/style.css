@@ -1125,3 +1125,31 @@ footer {
         font-size: 0.95rem;
     }
 }
+
+/* Order Page - small additions (reuses navbar, hero and contact-card theme) */
+.order-hero {
+    background: linear-gradient(rgba(74, 0, 0, 0.82), rgba(0, 0, 0, 0.78)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600') center/cover no-repeat;
+}
+
+.step-label {
+    align-self: center;
+    margin-bottom: 10px;
+    padding: 4px 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #700000;
+    background: #ffb703;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .order-hero {
+        padding: 60px 20px;
+    }
+
+    .order-hero h2 {
+        font-size: 2rem;
+    }
+}
