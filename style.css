@@ -1,0 +1,203 @@
+/* ==========================================
+   CSS Variables & Global Reset
+========================================== */
+:root {
+    --primary-red: #cc0000;
+    --dark-red: #990000;
+    --light-red: #ffcccc;
+    --pure-white: #ffffff;
+    --off-white: #f9f9f9;
+    --dark-gray: #333333;
+    --light-gray: #e0e0e0;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--off-white);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   Header & Navigation (Red & White Theme)
+========================================== */
+.header {
+    background-color: var(--pure-white);
+    border-bottom: 3px solid var(--primary-red);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-red);
+}
+
+.logo span {
+    color: var(--dark-gray);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 600;
+    padding: 0.5rem 0.8rem;
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: var(--primary-red);
+    color: var(--pure-white);
+}
+
+/* ==========================================
+   Hero Section
+========================================== */
+.hero {
+    background: linear-gradient(rgba(204, 0, 0, 0.85), rgba(153, 0, 0, 0.85)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: var(--pure-white);
+    text-align: center;
+    padding: 6rem 1rem;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--light-red);
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--pure-white);
+    color: var(--primary-red);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-primary:hover {
+    background-color: var(--light-red);
+    color: var(--dark-red);
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   Info Cards Section
+========================================== */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.info-card {
+    background: var(--pure-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary-red);
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(204, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    color: var(--primary-red);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.info-card p {
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================
+   Footer
+========================================== */
+.footer {
+    background-color: var(--dark-gray);
+    color: var(--pure-white);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    border-top: 4px solid var(--primary-red);
+}
+
+/* ==========================================
+   Responsive Design (Media Queries)
+========================================== */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+}
