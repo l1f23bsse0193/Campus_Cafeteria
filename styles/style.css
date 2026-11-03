@@ -1125,3 +1125,32 @@ footer {
         font-size: 0.95rem;
     }
 }
+
+/* Deals Page - small additions (reuses navbar, hero, menu-card theme) */
+.deals-section .grand-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.deals-section .old-price {
+    display: block;
+    margin: 8px 0 0;
+    font-size: 0.9rem;
+    color: #888888;
+    text-decoration: line-through;
+}
+.deals-footnote {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #555555;
+}
+@media (max-width: 1200px) {
+    .deals-section .grand-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .deals-section .grand-grid {
+        grid-template-columns: 1fr;
+    }
+}
